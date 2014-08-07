@@ -1,0 +1,6 @@
+source("functions.R")
+loadData()
+png(filename="plot1.png", width = 480, height = 480, units="px")
+hist(consumption$Global_active_power,col="red", main="Global Active Power",xlab="Global Active Power (kilowatts) ")
+title(main="Global Active Power", xlab="Global Active Power (kilowatts)")
+dev.off()
